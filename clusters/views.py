@@ -10,19 +10,19 @@ def index(request):
     cluster1 = Cluster.objects.get(pk=1)
 
     charts = []
-    
+    '''
     questions_to_show = ['Q11', 'QGEN', 'QAGE', 'QETH']
 
     for question in questions_to_show:
         data =  rc.get_data(question)
         charts.append(BarChart(SimpleDataSource(data=data), options={'title': question, 'isStacked': 'percent'}))
 
-    questions_to_show = ['Q5', 'Q26', 'Q29', 'Q39', 'Q50']
 
+    questions_to_show = ['Q5', 'Q26', 'Q29', 'Q39', 'Q50']
     for question in questions_to_show:
         data =  rc.get_data2(question)
         charts.append(BarChart(SimpleDataSource(data=data), options={'title': question}))
-
+    '''
     data = rc.get_data_for_column_chart()
     charts.append(ColumnChart(SimpleDataSource(data=data), options={'title': "Q13"}))
 
