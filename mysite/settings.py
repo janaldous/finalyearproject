@@ -25,7 +25,7 @@ SECRET_KEY = '8ulhggyb^hh*o+c2tlf1#ua)3k$w@w&8o$n(nv+4lo6j6&#v!x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jatfyp.heroku.com']
 
 
 # Application definition
